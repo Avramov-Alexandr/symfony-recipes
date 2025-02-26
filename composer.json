@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "symfony/flex": "^1.16"
+        "symfony/flex": "^2"
     },
     "extra": {
         "symfony": {
