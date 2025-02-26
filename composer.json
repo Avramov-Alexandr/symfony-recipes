@@ -19,14 +19,22 @@
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://api.github.com/repos/Avramov-Alexandr/symfony-recipes/index.json",
+                "https://raw.githubusercontent.com/Avramov-Alexandr/symfony-recipes/main/index.json",
                 "flex://defaults"
             ]
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Avramov-Alexandr/symfony-recipes"
+        }
+    ],
     "config": {
         "allow-plugins": {
             "symfony/flex": true
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
