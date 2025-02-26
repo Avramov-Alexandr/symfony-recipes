@@ -1,0 +1,32 @@
+{
+    "name": "smalex/symfony-recipes",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Smalex\\SymfonyRecipes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin Muller",
+            "email": "pr5@myworkplanner.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "symfony/flex": "^1.16"
+    },
+    "extra": {
+        "symfony": {
+            "endpoint": [
+                "https://api.github.com/repos/Avramov-Alexandr/symfony-recipes/contents/index.json",
+                "flex://defaults"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    }
+}
