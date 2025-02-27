@@ -8,7 +8,11 @@
 #    path: ../src/Controller/
 #    namespace: MP\CoreBundle\Controller
 #  type: attribute
+mp_core:
+  resource: '@CoreBundle/config/routes'
+  type: directory
+  prefix: /core
 
-home_index:
-  path: /home
-  controller: MP\CoreBundle\Controller::index
+#home_index:
+#  path: /home
+#  controller: MP\CoreBundle\Controller::index
