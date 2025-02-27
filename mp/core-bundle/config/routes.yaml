@@ -3,8 +3,12 @@
 #  type: attribute
 #  prefix: /core
 
-controllers:
-  resource:
-    path: ../src/Controller/
-    namespace: MP\CoreBundle\Controller
-  type: attribute
+#controllers:
+#  resource:
+#    path: ../src/Controller/
+#    namespace: MP\CoreBundle\Controller
+#  type: attribute
+
+mp_core:
+  path: /home
+  controller: MP\CoreBundle\Controller::index
