@@ -6,7 +6,9 @@
           "MP\\CoreBundle\\CoreBundle": ["all"]
         },
         "copy-from-recipe": {
-          "config/": "%CONFIG_DIR%"
+          "config/": "%CONFIG_DIR%",
+          "src/": "%SRC_DIR%/MP/CoreBundle/",
+          "config/routes/": "%CONFIG_DIR%/routes/"
         }
       },
       "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"

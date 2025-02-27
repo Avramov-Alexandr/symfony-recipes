@@ -5,7 +5,8 @@
     },
     "copy-from-recipe": {
       "config/": "%CONFIG_DIR%/",
-      "src/": "%SRC_DIR%/MP/CoreBundle/"
+      "src/": "%SRC_DIR%/MP/CoreBundle/",
+      "config/routes/": "%CONFIG_DIR%/routes/"
     }
   }
 }

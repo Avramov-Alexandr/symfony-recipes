@@ -11,7 +11,6 @@ class DefaultController extends AbstractController
     #[Route('/home', name: 'core_home')]
     public function index(): Response
     {
-        dd('Controller loaded');
         return new Response('Hello from CoreBundle Controller!');
     }
 }
