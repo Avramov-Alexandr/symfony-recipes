@@ -9,6 +9,6 @@
 #    namespace: MP\CoreBundle\Controller
 #  type: attribute
 
-mp_core:
+home_index:
   path: /home
   controller: MP\CoreBundle\Controller::index
