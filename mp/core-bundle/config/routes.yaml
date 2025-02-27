@@ -17,3 +17,8 @@ mp_core:
 home_index:
   path: /home
   controller: MP\CoreBundle\Controller\DefaultController::index
+
+core_bundle:
+  resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'
+  type: attribute
+  prefix: /core
