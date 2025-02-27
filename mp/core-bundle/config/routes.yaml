@@ -9,14 +9,14 @@
 #    namespace: MP\CoreBundle\Controller
 #  type: attribute
 #
-#mp_core:
-#  resource: '@CoreBundle/config/routes'
-#  type: directory
-#  prefix: /core
+mp_core:
+  resource: '@CoreBundle/config/routes'
+  type: directory
+  prefix: /core
 
-mp_first:
-  path: /home
-  controller: MP\CoreBundle\Controller\DefaultController::index
+#mp_first:
+#  path: /home
+#  controller: MP\CoreBundle\Controller\DefaultController::index
 
 #core_bundle:
 #  resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'

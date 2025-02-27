@@ -18,4 +18,9 @@ class CoreExtension extends Extension
         $loader->load('services.yaml');
         $loader->load('routes.yaml');
     }
+
+    public function getAlias(): string
+    {
+        return 'mp_core';
+    }
 }
