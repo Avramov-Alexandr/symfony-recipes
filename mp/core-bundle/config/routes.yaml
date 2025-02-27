@@ -22,3 +22,8 @@ core_bundle:
   resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'
   type: attribute
   prefix: /core
+
+mp_core_bundle_src:
+  resource: '../src/'
+  type: attribute
+  prefix: /core
