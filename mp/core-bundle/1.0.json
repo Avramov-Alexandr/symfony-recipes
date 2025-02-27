@@ -1,9 +1,9 @@
 {
   "manifests": {
-    "mp/first-bundle": {
+    "mp/core-bundle": {
       "manifest": {
         "bundles": {
-          "MP\\FirstBundle\\FirstBundle": ["all"]
+          "MP\\CoreBundle\\CoreBundle": ["all"]
         },
         "copy-from-recipe": {
           "config/": "%CONFIG_DIR%"

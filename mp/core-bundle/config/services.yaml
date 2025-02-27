@@ -1,0 +1,7 @@
+services:
+  MP\CoreBundle\:
+    resource: '../src/'
+    public: true
+    autowire: true
+    autoconfigure: true
+

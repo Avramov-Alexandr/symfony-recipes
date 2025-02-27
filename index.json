@@ -1,6 +1,6 @@
 {
   "recipes": {
-    "mp/first-bundle": [
+    "mp/core-bundle": [
       "1.0"
     ]
   },
