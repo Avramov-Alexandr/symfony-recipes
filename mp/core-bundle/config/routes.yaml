@@ -1,18 +1,19 @@
-#mp_core:
-#  resource: '../src/Controller/'
-#  type: attribute
-#  prefix: /core
+mp_core_bundle:
+  resource: '../src/Controller/'
+  type: attribute
+  prefix: /core
 
-#controllers:
-#  resource:
-#    path: ../src/Controller/
-#    namespace: MP\CoreBundle\Controller
-#  type: attribute
+controllers:
+  resource:
+    path: ../src/Controller/
+    namespace: MP\CoreBundle\Controller
+  type: attribute
+
 mp_core:
   resource: '@CoreBundle/config/routes'
   type: directory
   prefix: /core
 
-#home_index:
-#  path: /home
-#  controller: MP\CoreBundle\Controller::index
+home_index:
+  path: /home
+  controller: MP\CoreBundle\Controller\DefaultController::index
