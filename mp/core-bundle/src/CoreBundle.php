@@ -24,6 +24,7 @@ class CoreBundle extends AbstractBundle
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
         $container->import('../config/services.yaml');
+        $container->import('../config/routes.yaml');
         //$container->import('../config/routes.yaml', 'yaml');
         //$container->import(__DIR__.'/Controller/', 'attribute');
     }
