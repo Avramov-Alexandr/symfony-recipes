@@ -1,4 +1,10 @@
-mp_core:
-  resource: '../src/Controller/'
+#mp_core:
+#  resource: '../src/Controller/'
+#  type: attribute
+#  prefix: /core
+
+controllers:
+  resource:
+    path: ../src/Controller/
+    namespace: MP\CoreBundle\Controller
   type: attribute
-  prefix: /core
