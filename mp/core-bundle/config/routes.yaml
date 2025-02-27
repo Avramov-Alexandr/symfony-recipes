@@ -14,7 +14,7 @@
 #  type: directory
 #  prefix: /core
 
-home_index:
+mp_first:
   path: /home
   controller: MP\CoreBundle\Controller\DefaultController::index
 
