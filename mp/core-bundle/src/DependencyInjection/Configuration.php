@@ -12,9 +12,9 @@ class Configuration implements ConfigurationInterface
     }
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('core_bundle');
+        $treeBuilder = new TreeBuilder('mp_core');
 
-        $treeBuilder->getRootNode()
+        $rootNode = $treeBuilder->getRootNode()
             ->children()
             ->scalarNode('example_param')
             ->defaultValue('default_value')
