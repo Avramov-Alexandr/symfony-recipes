@@ -5,6 +5,10 @@ controllers:
     type: attribute
 
 mp_core:
-  resource: '../src/Controller'
-  type: directory
-  prefix: /core
+    resource: '../src/Controller'
+    type: directory
+    prefix: /core
+
+mp_first:
+    path: /home
+    controller: App\DefaultController::index
