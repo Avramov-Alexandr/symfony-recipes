@@ -46,4 +46,7 @@ mp_core_rout:
     type: directory
     prefix: /core
 
-
+mp_core_route:
+    resource: '@CoreBundle/config/routes'
+    type: directory
+    prefix: /core
