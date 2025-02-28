@@ -61,3 +61,8 @@ mp_core_bundle_third:
     type: attribute
     prefix: /core
 
+mp_core_bundle_r:
+    resource: '@CoreBundle/config/routes.yaml'
+    type: directory
+    prefix: /core
+
