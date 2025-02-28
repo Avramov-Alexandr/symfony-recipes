@@ -3,3 +3,8 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+mp_core:
+  resource: '@CoreBundle/config/routes'
+  type: directory
+  prefix: /core
