@@ -17,9 +17,8 @@ class CoreExtension extends Extension implements ExtensionInterface
         $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
-        $loader->load('routes.yaml');
         $loader->load('services.yaml');
-
+        $loader->load('routes.yaml');
     }
 
     public function getAlias(): string
