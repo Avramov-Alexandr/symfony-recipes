@@ -11,4 +11,4 @@ mp_core:
 
 mp_first:
     path: /home
-    controller: App\DefaultController::index
+    controller: App\Controller\DefaultController::index
