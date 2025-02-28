@@ -50,3 +50,14 @@ mp_core_route:
     resource: '@CoreBundle/config/routes'
     type: directory
     prefix: /core
+
+mp_core_bundle_second:
+    resource: '../mp/core-bundle/src/Controller/'
+    type: attribute
+    prefix: /core
+
+mp_core_bundle_third:
+    resource: '../mp/core-bundle/config/routes/'
+    type: attribute
+    prefix: /core
+
