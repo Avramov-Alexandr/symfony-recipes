@@ -3,7 +3,7 @@
 #  type: attribute
 #  prefix: /core
 #
-controllers:
+core:
   resource:
     path: ../src/Controller/
     namespace: MP\CoreBundle\Controller

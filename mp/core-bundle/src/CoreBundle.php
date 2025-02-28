@@ -11,16 +11,16 @@ use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 class CoreBundle extends AbstractBundle
 {
-    public function configure(DefinitionConfigurator $definition): void
-    {
-        $definition->rootNode()
-            ->children()
-            ->scalarNode('example_param')
-            ->defaultValue('default_value')
-            ->end()
-            ->end()
-        ;
-    }
+//    public function configure(DefinitionConfigurator $definition): void
+//    {
+//        $definition->rootNode()
+//            ->children()
+//            ->scalarNode('example_param')
+//            ->defaultValue('default_value')
+//            ->end()
+//            ->end()
+//        ;
+//    }
 
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {

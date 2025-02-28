@@ -10,19 +10,19 @@ class Configuration implements ConfigurationInterface
     {
         return \dirname(__DIR__);
     }
-    public function getConfigTreeBuilder(): TreeBuilder
-    {
-        $treeBuilder = new TreeBuilder('controllers');
-
-        $rootNode = $treeBuilder->getRootNode()
-            ->children()
-            ->scalarNode('example_param')
-            ->defaultValue('default_value')
-            ->end()
-            ->end()
-        ;
-
-        return $treeBuilder;
-    }
+//    public function getConfigTreeBuilder(): TreeBuilder
+//    {
+//        $treeBuilder = new TreeBuilder('core');
+//
+//        $rootNode = $treeBuilder->getRootNode()
+//            ->children()
+//            ->scalarNode('example_param')
+//            ->defaultValue('default_value')
+//            ->end()
+//            ->end()
+//        ;
+//
+//        return $treeBuilder;
+//    }
 
 }
