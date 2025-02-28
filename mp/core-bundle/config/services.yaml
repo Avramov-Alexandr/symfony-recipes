@@ -6,7 +6,7 @@
 #    autoconfigure: true
 
 services:
-  MP\CoreBundle\src\Controller:
+  MP\CoreBundle\Controller\:
     resource: '../src/Controller'
     public: true
     autowire: true
