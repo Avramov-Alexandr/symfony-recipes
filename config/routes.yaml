@@ -5,6 +5,6 @@ controllers:
     type: attribute
 
 mp_core:
-  resource: '@CoreBundle/config/routes'
+  resource: '../mp/core-bundle/config/routes'
   type: directory
   prefix: /core
