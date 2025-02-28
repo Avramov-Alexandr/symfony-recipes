@@ -3,16 +3,16 @@
 #  type: attribute
 #  prefix: /core
 #
-#controllers:
-#  resource:
-#    path: ../src/Controller/
-#    namespace: MP\CoreBundle\Controller
-#  type: attribute
+controllers:
+  resource:
+    path: ../src/Controller/
+    namespace: MP\CoreBundle\Controller
+  type: attribute
 #
-mp_core:
-  resource: '@CoreBundle/config/routes'
-  type: directory
-  prefix: /core
+#mp_core:
+#  resource: '@CoreBundle/config/routes'
+#  type: directory
+#  prefix: /core
 
 #mp_first:
 #  path: /home
