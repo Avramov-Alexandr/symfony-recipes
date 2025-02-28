@@ -5,7 +5,7 @@
 #
 controllers:
   resource:
-    path: ../src/Controller/
+    path: ../mp/core-bundle/src/Controller/
     namespace: MP\CoreBundle\Controller
   type: attribute
 #
