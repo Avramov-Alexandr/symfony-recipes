@@ -36,4 +36,14 @@ mp_core_bundle_src:
     type: attribute
     prefix: /core
 
+mp_core_routes:
+    resource: 'routes'
+    type: directory
+    prefix: /core
+
+mp_core_rout:
+    resource: '/routes'
+    type: directory
+    prefix: /core
+
 
