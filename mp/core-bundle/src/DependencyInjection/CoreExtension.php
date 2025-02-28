@@ -23,6 +23,6 @@ class CoreExtension extends Extension implements ExtensionInterface
 
     public function getAlias(): string
     {
-        return 'core';
+        return 'MP\CoreBundle\Controller';
     }
 }

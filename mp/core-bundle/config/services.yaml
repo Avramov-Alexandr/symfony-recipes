@@ -1,14 +1,8 @@
-#services:
-#  MP\CoreBundle\:
-#    resource: '../src/'
-#    public: true
-#    autowire: true
-#    autoconfigure: true
-
 services:
-  MP\CoreBundle\Controller\:
-    resource: '../src/Controller'
+  MP\CoreBundle\:
+    resource: '../src/'
     public: true
     autowire: true
     autoconfigure: true
+
 

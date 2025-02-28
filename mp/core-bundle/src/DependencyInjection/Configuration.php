@@ -12,7 +12,7 @@ class Configuration implements ConfigurationInterface
     }
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('core');
+        $treeBuilder = new TreeBuilder('MP\CoreBundle\Controller');
 
         $rootNode = $treeBuilder->getRootNode()
             ->children()
