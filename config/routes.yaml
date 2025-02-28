@@ -12,3 +12,28 @@ mp_core:
 mp_first:
     path: /home
     controller: App\Controller\DefaultController::index
+
+
+mp_core_bundle:
+    resource: '../src/Controller/'
+    type: attribute
+    prefix: /core
+
+MP\CoreBundle\Controller:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+core_bundle:
+    resource: '%kernel.project_dir%/vendor/mp/first-bundle/src/Controller'
+    type: attribute
+    prefix: /core
+
+mp_core_bundle_src:
+    resource: '../src/'
+    type: attribute
+    prefix: /core
+
+
