@@ -5,6 +5,6 @@ controllers:
     type: attribute
 
 mp_core:
-  resource: '../mp/core-bundle/src/Controller'
+  resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'
   type: directory
   prefix: /core
