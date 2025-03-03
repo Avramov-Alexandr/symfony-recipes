@@ -10,7 +10,7 @@ class CoreBundleLoader extends Loader
 {
     private bool $isLoaded = false;
 
-    public function load(mixed $resource, string $type = null): RouteCollection
+    public function load(mixed $resource, ?string $type = null): RouteCollection
     {
 
         dump('CoreBundleLoader загружен!'); // to delete
