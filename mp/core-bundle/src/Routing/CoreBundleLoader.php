@@ -10,34 +10,32 @@ use MP\CoreBundle\Service\CoreBundleService;
 class CoreBundleLoader extends Loader
 {
     private bool $isLoaded = false;
-    private CoreBundleService $coreBundleService;
 
-    public function __construct(CoreBundleService $coreBundleService)
+    public function __construct() {}
+
+    public function load(mixed $resource, string $type = null): RouteCollection
     {
-        $this->coreBundleService = $coreBundleService;
-    }
+        dump('✅ CoreBundleLoader загружен!');
 
-    public function load(mixed $resource, ?string $type = null): RouteCollection
-    {
-
-        //dump('CoreBundleLoader загружен!'); // to delete
         if ($this->isLoaded) {
-            throw new \RuntimeException('Do not add the "extra" loader twice');
+            throw new \RuntimeException('Do not add the "CoreBundleLoader" twice');
         }
 
         $routes = new RouteCollection();
 
         if (class_exists('MP\CoreBundle\Controller\DefaultController')) {
-            //dump('Контроллер найден!'); // to delete
+            dump('✅ Контроллер найден!');
             $route = new Route(
                 '/core/home',
                 ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
             );
             $routes->add('core_home', $route);
+        } else {
+            dump('❌ Контроллер не найден! Маршруты не загружены.');
         }
-        $routeName = 'coreRoute';
-        //dump($routes); // to delete
+
         $this->isLoaded = true;
+
         return $routes;
     }
 
