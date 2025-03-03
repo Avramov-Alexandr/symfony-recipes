@@ -2,12 +2,18 @@
 #  resource: '../src/Controller/'
 #  type: attribute
 #  prefix: /core
+
+mp_core_bundle_routes:
+  resource: .
+  type: core_bundle
+
+
 #
-MP\CoreBundle\Controller:
-  resource:
-    path: ../src/Controller/
-    namespace: MP\CoreBundle\Controller
-  type: attribute
+#MP\CoreBundle\Controller:
+#  resource:
+#    path: ../src/Controller/
+#    namespace: MP\CoreBundle\Controller
+#  type: attribute
 #
 #mp_core:
 #  resource: '@CoreBundle/config/routes'
