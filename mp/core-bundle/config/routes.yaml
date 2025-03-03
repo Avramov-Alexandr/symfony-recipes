@@ -4,8 +4,8 @@
 #  prefix: /core
 routes:
   mp_core_bundle_routes:
-    resource: '../src/Controller/'
-    type: attribute
+    resource: .
+    type: core_bundle
 
   custom_bundle:
     resource: '../src/Controller/'

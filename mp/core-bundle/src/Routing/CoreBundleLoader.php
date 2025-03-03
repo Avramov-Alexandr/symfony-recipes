@@ -21,16 +21,15 @@ class CoreBundleLoader extends Loader
 
         $routes = new RouteCollection();
 
-        $route = new Route(
-            '/core/home',
-            ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
-        );
-
+        if (class_exists('MP\CoreBundle\Controller\DefaultController')) {
+            $route = new Route(
+                '/core/home',
+                ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
+            );
+            $routes->add('core_home', $route);
+        }
         $routeName = 'coreRoute';
-        $routes->add('core_home', $route);
-
         $this->isLoaded = true;
-
         return $routes;
     }
 

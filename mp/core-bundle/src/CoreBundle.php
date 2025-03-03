@@ -25,4 +25,14 @@ class CoreBundle extends AbstractBundle
         return new DependencyInjection\CoreExtension();
     }
 
+    public function configureRoutes(RoutingConfigurator $routes): void
+    {
+        // Проверяем, существует ли директория контроллеров перед загрузкой маршрутов
+        $controllersPath = __DIR__ . '/Controller';
+
+        if (is_dir($controllersPath)) {
+            $routes->import($controllersPath, 'attribute');
+        }
+    }
+
 }

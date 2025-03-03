@@ -6,9 +6,7 @@ services:
     autoconfigure: true
 
   MP\CoreBundle\Routing\CoreBundleLoader:
-    arguments: [ ]
-    tags:
-      - { name: routing.loader }
+    tags: [ 'routing.loader' ]
 
 
 
