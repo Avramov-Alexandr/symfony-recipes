@@ -7,9 +7,9 @@
 #  resource: .
 #  type: core_bundle
 #
-#custom_bundle:
-#  resource: '../src/Controller/'
-#  type: attribute
+core_bundle:
+  resource: '../src/Controller/'
+  type: attribute
 
 
 
