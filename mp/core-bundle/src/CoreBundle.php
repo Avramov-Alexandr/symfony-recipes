@@ -20,10 +20,10 @@ class CoreBundle extends AbstractBundle
         //$container->import(__DIR__.'/Controller/', 'attribute');
     }
 
-//    public function getContainerExtension(): ?ExtensionInterface
-//    {
-//        return new DependencyInjection\CoreExtension();
-//    }
+    public function getContainerExtension(): ?ExtensionInterface
+    {
+        return new DependencyInjection\CoreExtension();
+    }
 
 
 }
