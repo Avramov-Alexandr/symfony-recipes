@@ -8,6 +8,12 @@ services:
   MP\CoreBundle\Routing\CoreBundleLoader:
     tags: [ 'routing.loader' ]
 
+  MP\CoreBundle\Controller\:
+    resource: '../src/Controller'
+    autowire: true
+    autoconfigure: true
+    public: true
+
 
 
 
