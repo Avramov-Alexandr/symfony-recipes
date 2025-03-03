@@ -13,7 +13,7 @@ class CoreBundleLoader extends Loader
     public function load(mixed $resource, string $type = null): RouteCollection
     {
 
-        //dd('CoreBundleLoader загружен!');
+        dump('CoreBundleLoader загружен!'); // to delete
 
         if ($this->isLoaded) {
             throw new \RuntimeException('Do not add the "extra" loader twice');
@@ -22,6 +22,7 @@ class CoreBundleLoader extends Loader
         $routes = new RouteCollection();
 
         if (class_exists('MP\CoreBundle\Controller\DefaultController')) {
+            dump('Контроллер найден!'); // to delete
             $route = new Route(
                 '/core/home',
                 ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
@@ -29,6 +30,7 @@ class CoreBundleLoader extends Loader
             $routes->add('core_home', $route);
         }
         $routeName = 'coreRoute';
+        dump($routes); // to delete
         $this->isLoaded = true;
         return $routes;
     }
