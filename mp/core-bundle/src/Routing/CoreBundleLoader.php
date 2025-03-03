@@ -13,7 +13,7 @@ class CoreBundleLoader extends Loader
     public function load(mixed $resource, string $type = null): RouteCollection
     {
         if ($this->isLoaded) {
-            throw new \RuntimeException('');
+            throw new \RuntimeException('Do not add the "extra" loader twice');
         }
 
         $routes = new RouteCollection();
@@ -23,6 +23,7 @@ class CoreBundleLoader extends Loader
             ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
         );
 
+        $routeName = 'coreRoute';
         $routes->add('core_home', $route);
 
         $this->isLoaded = true;
@@ -30,7 +31,7 @@ class CoreBundleLoader extends Loader
         return $routes;
     }
 
-    public function supports(mixed $resource, string $type = null): bool
+    public function supports(mixed $resource, ?string $type = null): bool
     {
         return 'core_bundle' === $type;
     }

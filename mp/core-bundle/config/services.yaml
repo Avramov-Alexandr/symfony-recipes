@@ -5,4 +5,10 @@ services:
     autowire: true
     autoconfigure: true
 
+  MP\CoreBundle\src\Routing\CoreBundleLoader:
+    tags: [routing.loader]
+
+  app_index:
+    resource: .
+    type: index
 
