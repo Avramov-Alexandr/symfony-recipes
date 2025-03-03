@@ -3,8 +3,7 @@
     "type": "symfony-bundle",
     "autoload": {
         "psr-4": {
-            "MP\\CoreBundle\\": "mp/core-bundle/src/",
-            "App\\": "src/"
+            "MP\\CoreBundle\\": "mp/core-bundle/src/"
         }
     },
     "authors": [
