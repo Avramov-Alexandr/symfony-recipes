@@ -8,7 +8,4 @@ services:
   MP\CoreBundle\Routing\CoreBundleLoader:
     tags: [routing.loader]
 
-  app_index:
-    resource: .
-    type: autowire
 
