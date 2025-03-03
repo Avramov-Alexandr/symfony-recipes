@@ -10,5 +10,5 @@ services:
 
   app_index:
     resource: .
-    type: index
+    type: autowire
 
