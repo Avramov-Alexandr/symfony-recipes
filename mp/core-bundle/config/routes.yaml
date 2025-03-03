@@ -11,6 +11,9 @@ routes:
     resource: '../src/Controller/'
     type: attribute
 
+mp_core_bundle_routes:
+  resource: .
+  type: core_bundle
 
 #
 #MP\CoreBundle\Controller:
