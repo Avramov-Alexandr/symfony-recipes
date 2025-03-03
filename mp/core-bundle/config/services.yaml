@@ -20,10 +20,8 @@ services:
 #    public: true
 
   MP\CoreBundle\Routing\CoreBundleLoader:
-    autowire: true
-    autoconfigure: true
-    tags:
-      - { name: routing.loader }
+    arguments: [ ]
+    tags: [ 'routing.loader' ]
 
 
 

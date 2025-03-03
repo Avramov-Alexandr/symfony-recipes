@@ -11,27 +11,20 @@ class CoreBundleLoader extends Loader
 {
     private bool $isLoaded = false;
 
-    public function __construct() {}
-
-    public function load(mixed $resource, string $type = null): RouteCollection
+    public function load(mixed $resource, ?string $type = null): RouteCollection
     {
-        dump('✅ CoreBundleLoader загружен!');
-
         if ($this->isLoaded) {
-            throw new \RuntimeException('Do not add the "CoreBundleLoader" twice');
+            throw new \RuntimeException('Do not add the "CoreBundleLoader" twice.');
         }
 
         $routes = new RouteCollection();
 
-        if (class_exists('MP\CoreBundle\Controller\DefaultController')) {
-            dump('✅ Контроллер найден!');
+        if (class_exists(\MP\CoreBundle\Controller\DefaultController::class)) {
             $route = new Route(
                 '/core/home',
                 ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
             );
             $routes->add('core_home', $route);
-        } else {
-            dump('❌ Контроллер не найден! Маршруты не загружены.');
         }
 
         $this->isLoaded = true;
