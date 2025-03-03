@@ -12,6 +12,9 @@ class CoreBundleLoader extends Loader
 
     public function load(mixed $resource, string $type = null): RouteCollection
     {
+
+        dump('CoreBundleLoader загружен!');
+
         if ($this->isLoaded) {
             throw new \RuntimeException('Do not add the "extra" loader twice');
         }
