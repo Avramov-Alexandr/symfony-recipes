@@ -22,6 +22,9 @@ services:
   MP\CoreBundle\Routing\CoreBundleLoader:
     arguments: [ ]
     tags: [ 'routing.loader' ]
+    public: true
+    autowire: true
+    autoconfigure: true
 
 
 
