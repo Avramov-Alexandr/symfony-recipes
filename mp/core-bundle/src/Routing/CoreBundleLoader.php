@@ -17,9 +17,12 @@ class CoreBundleLoader extends Loader
             throw new \RuntimeException('Do not add the "CoreBundleLoader" twice.');
         }
 
+        dump('CoreBundleLoader загружен!');
+
         $routes = new RouteCollection();
 
         if (class_exists(\MP\CoreBundle\Controller\DefaultController::class)) {
+            dump('Контроллер найден!');
             $route = new Route(
                 '/core/home',
                 ['_controller' => 'MP\CoreBundle\Controller\DefaultController::index']
@@ -28,6 +31,8 @@ class CoreBundleLoader extends Loader
         }
 
         $this->isLoaded = true;
+        dump($routes);
+        die();
 
         return $routes;
     }
