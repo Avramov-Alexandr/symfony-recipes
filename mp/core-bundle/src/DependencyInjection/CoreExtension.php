@@ -16,7 +16,7 @@ class CoreExtension extends Extension implements ExtensionInterface
 //        $configuration = new Configuration();
 //        $config = $this->processConfiguration($configuration, $configs);
 
-        $loader = new YamlFileLoader($container, new FileLocator(dirname(__DIR__).'/../../config'));
+        $loader = new YamlFileLoader($container, new FileLocator(dirname(__DIR__).'/mp/core-bundle/config'));
         $loader->load('services.yaml');
         //$loader->load('routes.yaml');
 
