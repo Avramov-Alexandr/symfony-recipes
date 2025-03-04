@@ -39,7 +39,7 @@ class CoreBundle extends AbstractBundle
             ->end() // twitter
             ->end()
         ;
-        //$definition->import('../config/services.yaml');
+        $definition->import('../config/services.yaml');
         $definition->import('../config/routes.yaml');
     }
 
