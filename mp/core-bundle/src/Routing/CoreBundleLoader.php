@@ -32,7 +32,6 @@ class CoreBundleLoader extends Loader
 
         $this->isLoaded = true;
         dump($routes);
-        die();
 
         return $routes;
     }
