@@ -16,6 +16,8 @@ class CoreBundle extends AbstractBundle
     {
         $container->import('../config/services.yaml');
         $container->import('../config/routes.yaml');
+        $container->services()
+            ->get('MP\CoreBundle');
         //$container->import('../config/routes.yaml', 'yaml');
         //$container->import(__DIR__.'/Controller/', 'attribute');
     }
@@ -23,6 +25,22 @@ class CoreBundle extends AbstractBundle
     public function getContainerExtension(): ?ExtensionInterface
     {
         return new DependencyInjection\CoreExtension();
+    }
+
+    public function configure(DefinitionConfigurator $definition): void
+    {
+        $definition->rootNode()
+            ->children()
+            ->arrayNode('twitter')
+            ->children()
+            ->integerNode('client_id')->end()
+            ->scalarNode('client_secret')->end()
+            ->end()
+            ->end() // twitter
+            ->end()
+        ;
+        $definition->import('../config/services.yaml');
+        $definition->import('../config/routes.yaml');
     }
 
 
