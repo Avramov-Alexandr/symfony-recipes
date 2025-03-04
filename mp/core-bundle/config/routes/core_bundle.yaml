@@ -1,0 +1,3 @@
+mp_core_bundle_routes:
+  resource: .
+  type: core_bundle
