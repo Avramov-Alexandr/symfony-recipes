@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /vendor/
 
 ###> symfony/framework-bundle ###
@@ -14,3 +15,6 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+=======
+/.idea/
+>>>>>>> 27f4e147a1b24542b64d5ad9f4df1cb591c8efcd
