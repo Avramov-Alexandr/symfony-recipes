@@ -3,7 +3,7 @@
     "mp/core-bundle": {
       "manifest": {
         "bundles": {
-          "MP\\CoreBundle\\CoreBundle": ["all"]
+          "MPCoreBundle\\CoreBundle": ["all"]
         },
         "copy-from-recipe": {
           "config/": "%CONFIG_DIR%",

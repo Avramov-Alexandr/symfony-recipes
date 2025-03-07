@@ -1,6 +1,6 @@
 <?php
 
-namespace MP\CoreBundle;
+namespace MPCoreBundle;
 
 use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -17,7 +17,7 @@ class CoreBundle extends AbstractBundle
         $container->import('../config/services.yaml');
         $container->import('../config/routes.yaml');
         $container->services()
-            ->get('MP\CoreBundle');
+            ->get('MPCoreBundle');
         //$container->import('../config/routes.yaml', 'yaml');
         //$container->import(__DIR__.'/Controller/', 'attribute');
     }

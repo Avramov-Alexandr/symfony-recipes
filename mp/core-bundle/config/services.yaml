@@ -1,5 +1,5 @@
 services:
-  MP\CoreBundle\:
+  MPCoreBundle\:
     resource: '../src/'
     public: true
     autowire: true
@@ -19,7 +19,7 @@ services:
 #    autoconfigure: true
 #    public: true
 
-  MP\CoreBundle\Routing\RouteLoader:
+  MPCoreBundle\Routing\RouteLoader:
     tags: [ 'routing.loader' ]
 
 

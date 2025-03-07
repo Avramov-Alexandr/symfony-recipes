@@ -1,6 +1,6 @@
 <?php
 
-namespace MP\CoreBundle\Routing;
+namespace MPCoreBundle\Routing;
 
 use Symfony\Component\Config\Loader\Loader;
 use Symfony\Component\Routing\RouteCollection;
@@ -14,7 +14,7 @@ class RouteLoader extends Loader
         $routes = new RouteCollection();
 
         if (!$this->isLoaded) {
-            $resource = '@CoreBundle/config/routes.yaml';
+            $resource = '@MPCoreBundle/config/routes.yaml';
             $type = 'yaml';
 
             $importedRoutes = $this->import($resource, $type);

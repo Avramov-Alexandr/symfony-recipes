@@ -1,11 +1,11 @@
 <?php
 
-namespace MP\CoreBundle\Service;
+namespace MPCoreBundle\Service;
 
 class CoreBundleService
 {
     public function isEnabled(): bool
     {
-        return class_exists(\MP\CoreBundle\CoreBundle::class);
+        return class_exists(\MPCoreBundle\CoreBundle::class);
     }
 }

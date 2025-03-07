@@ -1,5 +1,5 @@
 <?php
-namespace MP\CoreBundle\DependencyInjection;
+namespace MPCoreBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -12,7 +12,7 @@ class Configuration implements ConfigurationInterface
     }
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('MP\CoreBundle\Controller');
+        $treeBuilder = new TreeBuilder('MPCoreBundle\Controller');
 
         $rootNode = $treeBuilder->getRootNode()
             ->children()

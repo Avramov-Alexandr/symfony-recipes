@@ -1,6 +1,6 @@
 <?php
 
-namespace MP\CoreBundle\Controller;
+namespace MPCoreBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
