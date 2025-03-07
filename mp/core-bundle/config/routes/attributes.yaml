@@ -1,9 +1,9 @@
-controllers:
-  resource:
-    path: ../../src/Controller/
-    namespace: MP\CoreBundle\Controller
-  type: attribute
-
-custom_bundle:
-  resource: '../../src/Controller/'
-  type: attribute
+#controllers:
+#  resource:
+#    path: ../../src/Controller/
+#    namespace: MP\CoreBundle\Controller
+#  type: attribute
+#
+#custom_bundle:
+#  resource: '../../src/Controller/'
+#  type: attribute

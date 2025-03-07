@@ -2,6 +2,6 @@
 #  resource: '@CoreBundle/src/Controller/'
 #  type: attribute
 
-mp_core_bundle_routes:
-  resource: .
-  type: core_bundle
+#mp_core_bundle_routes:
+#  resource: .
+#  type: core_bundle

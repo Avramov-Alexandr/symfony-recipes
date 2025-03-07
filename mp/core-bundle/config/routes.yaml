@@ -1,40 +1,40 @@
-mp_core_bundle:
-  resource: '../src/Controller/'
-  type: attribute
-  prefix: /core
-
-mp_core_bundle_routes:
-  resource: .
-  type: core_bundle
-
-core_bundle:
-  resource: '../src/Controller/'
-  type: attribute
-
-
-
-
-MP\CoreBundle\Controller:
-  resource:
-    path: ../src/Controller/
-    namespace: MP\CoreBundle\Controller
-  type: attribute
-
-mp_core:
-  resource: '@CoreBundle/config/routes'
-  type: directory
-  prefix: /core
+#mp_core_bundle:
+#  resource: '../src/Controller/'
+#  type: attribute
+#  prefix: /core
+#
+#mp_core_bundle_routes:
+#  resource: .
+#  type: core_bundle
+#
+#core_bundle:
+#  resource: '../src/Controller/'
+#  type: attribute
+#
+#
+#
+#
+#MP\CoreBundle\Controller:
+#  resource:
+#    path: ../src/Controller/
+#    namespace: MP\CoreBundle\Controller
+#  type: attribute
+#
+#mp_core:
+#  resource: '@CoreBundle/config/routes'
+#  type: directory
+#  prefix: /core
 
 mp_first:
   path: /home
   controller: MP\CoreBundle\Controller\DefaultController::index
 
-core_bundle_a:
-  resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'
-  type: attribute
-  prefix: /core
-
-mp_core_bundle_src:
-  resource: '../src/'
-  type: attribute
-  prefix: /core
+#core_bundle_a:
+#  resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'
+#  type: attribute
+#  prefix: /core
+#
+#mp_core_bundle_src:
+#  resource: '../src/'
+#  type: attribute
+#  prefix: /core
