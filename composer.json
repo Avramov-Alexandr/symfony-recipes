@@ -1,5 +1,5 @@
 {
-    "name": "mp-recipes",
+    "name": "mp/recipes",
     "type": "symfony-bundle",
     "autoload": {
         "psr-4": {
