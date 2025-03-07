@@ -1,0 +1,27 @@
+services:
+  MP\CoreBundle\:
+    resource: '../src/'
+    public: true
+    autowire: true
+    autoconfigure: true
+
+#  MP\CoreBundle\Routing\CoreBundleLoader:
+#    tags: [ 'routing.loader' ]
+
+#  MP\CoreBundle\Controller\:
+#    resource: '../src/Controller'
+#    autowire: true
+#    autoconfigure: true
+#    public: true
+
+#  MP\CoreBundle\Service\CoreBundleService:
+#    autowire: true
+#    autoconfigure: true
+#    public: true
+
+  MP\CoreBundle\Routing\RoteLoader:
+    tags: [ 'routing.loader' ]
+
+
+
+
