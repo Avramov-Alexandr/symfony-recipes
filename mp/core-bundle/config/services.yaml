@@ -19,12 +19,8 @@ services:
 #    autoconfigure: true
 #    public: true
 
-  MP\CoreBundle\Routing\CoreBundleLoader:
-    arguments: [ ]
+  MP\CoreBundle\Routing\RoteLoader:
     tags: [ 'routing.loader' ]
-    public: true
-    autowire: true
-    autoconfigure: true
 
 
 
