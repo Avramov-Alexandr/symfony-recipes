@@ -24,7 +24,7 @@
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://git.myworkplanner.net/mp-recipes/raw/b40ad93ef3ab1255ffa80c361447031165b2aa16/index.json",
+                "https://raw.git.myworkplanner.net/mp-recipes/refs/hrads/index.json",
                 "flex://defaults"
             ]
         }

@@ -19,7 +19,7 @@ services:
 #    autoconfigure: true
 #    public: true
 
-  MP\CoreBundle\Routing\RoteLoader:
+  MP\CoreBundle\Routing\RouteLoader:
     tags: [ 'routing.loader' ]
 
 
