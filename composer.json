@@ -1,5 +1,5 @@
 {
-    "name": "mp/first-bundle",
+    "name": "mp-recipes",
     "type": "symfony-bundle",
     "autoload": {
         "psr-4": {
@@ -24,7 +24,7 @@
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://raw.githubusercontent.com/Avramov-Alexandr/symfony-recipes/main/index.json",
+                "https://git.myworkplanner.net/mp-recipes/raw/b40ad93ef3ab1255ffa80c361447031165b2aa16/index.json",
                 "flex://defaults"
             ]
         }
@@ -32,7 +32,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Avramov-Alexandr/symfony-recipes"
+            "url": "https://git.myworkplanner.net/mp-recipes.git"
         }
     ],
     "config": {
