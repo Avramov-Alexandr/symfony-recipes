@@ -9,33 +9,7 @@
           "config/": "%CONFIG_DIR%",
           "src/": "%SRC_DIR%/",
           "config/routes/": "%CONFIG_DIR%/routes/",
-          "config/routes.yaml": "%CONFIG_DIR%/routes/mp_core_bundle.yaml"
-        },
-        "files": {
-          "config/packages/mp_core.yaml": {
-            "contents": [
-              "services:",
-              "    MPCoreBundle\\:",
-              "        resource: '../src/'",
-              "        public: true",
-              "        autowire: true",
-              "        autoconfigure: true",
-              ""
-            ],
-            "executable": false,
-            "path": "config/packages/mp_core.yaml"
-          },
-          "config/routes/mp_core.yaml": {
-            "contents": [
-              "mp_core:",
-              "    resource: '../src/Controller/'",
-              "    type: attribute",
-              "    prefix: /core",
-              ""
-            ],
-            "executable": false,
-            "path": "config/routes/mp_core.yaml"
-          }
+          "config/routes/mp_core.yaml": "%CONFIG_DIR%/routes.yaml"
         }
       },
       "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
