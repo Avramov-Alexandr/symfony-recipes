@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
-class CoreBundle extends AbstractBundle
+class MPCoreBundle extends AbstractBundle
 {
 
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void

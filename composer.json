@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "autoload": {
         "psr-4": {
-            "MPCoreBundle\\": "mp/core-bundle/src/"
+            "MPCoreBundle\\": "src/"
         }
     },
     "authors": [
@@ -24,7 +24,7 @@
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://raw.git.myworkplanner.net/mp-recipes/refs/hrads/index.json",
+                "https://raw.git.myworkplanner.net/mp-recipes.git/refs/heads/main:/index.json",
                 "flex://defaults"
             ]
         }
