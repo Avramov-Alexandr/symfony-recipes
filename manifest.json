@@ -8,7 +8,8 @@
         "copy-from-recipe": {
           "config/": "%CONFIG_DIR%",
           "src/": "%SRC_DIR%/",
-          "config/routes/": "%CONFIG_DIR%/routes/"
+          "config/routes/": "%CONFIG_DIR%/routes/",
+          "config/routes.yaml": "%CONFIG_DIR%/routes/mp_core_bundle.yaml"
         }
       },
       "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
