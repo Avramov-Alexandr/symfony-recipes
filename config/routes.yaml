@@ -3,9 +3,11 @@ mp_core_bundle:
   type: attribute
   prefix: /core
 #
-#mp_core_bundle_routes:
-#  resource: .
-#  type: core_bundle
+
+mp_core_bundle_routes:
+  resource: '@MPCoreBundle/src/Controller/'
+  type: attribute
+
 #
 #core_bundle:
 #  resource: '../src/Controller/'
