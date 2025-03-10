@@ -1,0 +1,12 @@
+mp_core_bundle:
+  resource: '../../src/Controller/'
+  type: attribute
+  prefix: /core
+
+mp_core_bundle_routes:
+  resource: '@MPCoreBundle/src/Controller/'
+  type: attribute
+
+mp_first:
+  path: /home
+  controller: MPCoreBundle\Controller\DefaultController::index
