@@ -21,12 +21,12 @@ class CoreExtension extends Extension implements ExtensionInterface
 //        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config/routes'));
 //        $loader->load('core_bundle.yaml');
 
-        $container->register('mp_core_bundle.route_loader', 'MPCoreBundle\Routing\RouteLoader')
-            ->addTag('routing.loader');
+//        $container->register('mp_core_bundle.route_loader', 'MPCoreBundle\Routing\RouteLoader')
+//            ->addTag('routing.loader');
     }
 
     public function getAlias(): string
     {
-        return 'core_bundle';
+        return 'mp_core_bundle';
     }
 }

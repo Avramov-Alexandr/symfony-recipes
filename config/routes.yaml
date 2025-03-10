@@ -1,7 +1,7 @@
-#mp_core_bundle:
-#  resource: '../src/Controller/'
-#  type: attribute
-#  prefix: /core
+mp_core_bundle:
+  resource: '../src/Controller/'
+  type: attribute
+  prefix: /core
 #
 #mp_core_bundle_routes:
 #  resource: .
@@ -25,9 +25,9 @@
 #  type: directory
 #  prefix: /core
 
-mp_first:
-  path: /home
-  controller: MPCoreBundle\Controller\DefaultController::index
+#mp_first:
+#  path: /home
+#  controller: MPCoreBundle\Controller\DefaultController::index
 
 #core_bundle_a:
 #  resource: '%kernel.project_dir%/vendor/mp/first-bundle/mp/core-bundle/src/Controller'
