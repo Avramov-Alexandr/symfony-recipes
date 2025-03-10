@@ -4,10 +4,10 @@
       "1.0"
     ]
   },
-  "branch": "main",
+  "branch": "mid",
   "is_contrib": true,
   "_links": {
-    "repository": "https://git.myworkplanner.net/mp-recipes.git",
-    "origin_template": "{package}:{version}@git.myworkplanner.net/mp-recipes.git:main"
+    "repository": "https://github.com/Avramov-Alexandr/symfony-recipes",
+    "origin_template": "{package}:{version}@github.com/Avramov-Alexandr/symfony-recipes:mid"
   }
 }

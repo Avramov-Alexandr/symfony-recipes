@@ -24,7 +24,7 @@
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://raw.git.myworkplanner.net/mp-recipes.git/refs/heads/main:/index.json",
+                "https://raw.githubusercontent.com/Avramov-Alexandr/symfony-recipes/mid/index.json",
                 "flex://defaults"
             ]
         }
@@ -32,7 +32,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://git.myworkplanner.net/mp-recipes.git"
+            "url": "https://github.com/Avramov-Alexandr/symfony-recipes"
         }
     ],
     "config": {
